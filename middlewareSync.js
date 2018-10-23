@@ -45,8 +45,9 @@ const action = {
 }
 
 // 分派(dispatch) action
+console.log('store.dispatch(action)');
 const dispatchReutrnValue = store.dispatch(action)
 console.log('dispatchReutrnValue = ' + JSON.stringify(dispatchReutrnValue));
 
 // 印出收到 action 後，被 reducer 修改的 state
-console.log('state = ' + JSON.stringify(store.getState()));
+console.log('dispatch done! state = ' + JSON.stringify(store.getState()));
